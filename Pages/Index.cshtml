@@ -1,0 +1,38 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@* I am using boostrap 5.3.8 utilities classes *@
+<div class="text-center p-4 bg-light rounded shadow-sm">
+    <h4 class="mb-3">Voucher Manager</h4>
+    <div class="row mb-3">
+    <div class="col-md-12"> 
+    <div class="d-flex flex-wrap justify-content-center gap-2 mb-3">
+        <button class="btn btn-primary btn-lg" id="btnInsertCan">Insert Can</button>
+        <button class="btn btn-success btn-lg" id="btnInsertBottle">Insert Bottle</button>
+        <button class="btn btn-warning btn-lg" id="btnPrint">Print Voucher</button>
+    </div>
+    </div>
+    </div>
+    <div class="row justify-content-center mt-4">
+        <div class="col-md-6">
+            <div class="card shadow-sm">
+                <div class="card-header bg-warning text-dark fw-bold">
+                    Voucher Output
+                </div>
+                <div class="card-body">  
+                    <div class="mb-3">
+                        <h5 id="processingStatus" class="text-muted mb-0"></h5>
+                    </div>         
+                    <h5>Total: <span id="total" class="fw-bold fs-5 text-dark">0</span> NOK</h5>        
+                    <div id="logs" class="border rounded p-2 bg-white text-start mt-3 logs-style">                  
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
