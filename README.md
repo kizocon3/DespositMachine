@@ -28,6 +28,8 @@ It allows users to insert bottles and cans, calculates the total deposit amount 
 8. The application is built using ASP.NET Core MVC with Razor Pages for the frontend and C# for the backend logic.
 9. The project targets .NET 8.0 and uses the latest C# language features for improved readability and maintainability.
 
+## To Remove
+Views/Shared/_Layout.cshtml ( Ignore this part! it’s just here for testing/demo purposes )
 
 ## How to Run
 1. Open the solution in Visual Studio 2022 or later
