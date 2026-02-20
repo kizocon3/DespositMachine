@@ -58,6 +58,15 @@ function appendLog(message) {
 }
 
 document.addEventListener("DOMContentLoaded", () => {
+
+    const btnInsertPop = document.getElementById('btnInsertPop');
+    if (btnInsertPop) {
+        btnInsertPop.addEventListener('click', (e) => {
+            e.preventDefault();
+            insert('Pop');
+        });
+    }
+
     const btnInsertCan = document.getElementById('btnInsertCan');
     if (btnInsertCan) {
         btnInsertCan.addEventListener('click', (e) => {

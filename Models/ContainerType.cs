@@ -3,7 +3,8 @@
     public enum ContainerType
     {
         Can,
+        Pop,
         Bottle,
-        Pop
+      
     }
 }
